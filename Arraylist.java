@@ -12,8 +12,7 @@ class test {
   
         // Declaring the ArrayList with 
         // initial size n 
-        ArrayList<Integer> arrli 
-            = new ArrayList<Integer>(); 
+        ArrayList<Integer> arrli = new ArrayList<Integer>(); 
   
         // Appending new elements at 
         // the end of the list 
