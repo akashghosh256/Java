@@ -1,0 +1,75 @@
+ ---------------------------------------------SUBLIME SETTINGS FOR JAVA-----------------------------------------------------
+RunJAVA build:
+
+{
+	"shell_cmd": "javac $file && java $file_base_name"
+}
+
+
+Basic Program for File I/O:
+
+import java.io.*;
+import java.util.*;
+
+public class B {
+	public static void main(String[] args) {
+		try {
+			System.setIn(new FileInputStream("input.txt"));
+			System.setOut(new PrintStream(new FileOutputStream("output.txt")));
+		} catch (Exception e) {
+			System.err.println("Error");
+		}
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		System.out.println(n);
+	}
+}
+
+Terminus Keybindings:
+
+[
+	{ "keys": ["ctrl+`"], "command": "toggle_terminus_panel",
+	"args": {
+		"config_name":"Default",
+		"cwd":"${file_path:${folder}}"
+		}
+	},
+	{ 
+    "keys": ["ctrl+w"], "command": "terminus_close", "context": [{ "key": "terminus_view"}]
+   },
+    { 
+        "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+]
+
+Terminus Build for JAVA:
+
+{
+     "target":"terminus_exec",
+     "cancel":"terminus_cancel_build",
+     "auto_close":false,
+     "focus":true,
+     "timeit":false,
+     "shell_cmd": "javac $file && java $file_base_name",
+     "cwd":"${file_path:'${folder}'}"
+ }
+
+ Basic JAVA Snippet:
+
+ <snippet>
+	<content><![CDATA[
+import java.io.*;
+import java.util.*;
+
+public class ${TM_FILENAME/(\.\w+)//g} {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	}
+}
+]]></content>
+	<tabTrigger>hello</tabTrigger>
+	<!-- <scope>source.python</scope> -->
+</snippet>
+
