@@ -21,12 +21,26 @@ if it returns a positive value, the value in b will be ordered before a.
 When you pass the function (a, b) => a - b, you’re telling the .sort() function to sort 
 the numbers in ascending order.
 
+Remember: There is a slight difference between Arrays.sort() vs Collections.sort(). 
+Arrays.sort() works for arrays which can be of primitive data type also. Collections.sort() 
+works for objects Collections like ArrayList, LinkedList, etc. 
 
 FOR 1D ARRAY
 import java.util.Arrays;
 import java.util.Collections;
-Arrays.sort(array);                    Integer[] array = { 99, 12, -8, 12, 34, 110, 0, 121, 66, -110 };
-Arrays.sort(array, Collections.reverseOrder()); // descending order    
+Arrays.sort(arr);        int[] arr = { 13, 7, 6, 45, 21, 9, 2, 100 };
+public static void sort(int[] arr, int from_Index, int to_Index) ;   for specific part of array
+                            eg:  Arrays.sort(arr, 1, 5);
+
+import java.util.Arrays;
+import java.util.Collections;
+Arrays.sort(array, Collections.reverseOrder()); // descending order   
+Integer[] array = { 99, 12, -8, 12, 34, 110, 0, 121, 66, -110 }; 
+
+
+
+
+ System.out.println("Modified arr[] : " + Arrays.toString(arr));
 
 
 
