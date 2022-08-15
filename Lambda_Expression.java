@@ -11,6 +11,63 @@ link : https://www.javatpoint.com/java-lambda-expressions
 //---------------------------------------------------------------------------------------
 
 /* 
+                                     WRITTEN BY ME TO UNDERSTAND THE LAMBDA CONCEPT :)
+ // without lambda expression----------------------------------------------------
+ 
+ interface Printable{
+    void print(String Suffix);
+ }
+
+
+class Lion implements Printable{
+    public void print(String suffix){
+        System.out.println("lion " + suffix);
+    }
+}
+
+
+public class fire{
+    public static void main(String[] args) {
+        Lion lion = new Lion();
+        printThing(lion);
+    }
+    
+    static void printThing(Printable p){
+        p.print("Roarrrrr");
+    }
+
+}
+// OUTPUT : lion Roarrrrr
+
+
+// with lambda expression----------------------------------------------------
+// Here we are printing statements without creating Lion class 
+// and implementing Printable interface
+
+ interface Printable{
+    void print(String suffix);
+}
+
+
+public class fire{
+public static void main(String[] args) {
+
+Printable lambdaprint = (s) -> System.out.println(" ROAR :] " +s);
+printThing(lambdaprint);
+
+}
+
+static void printThing(Printable p){
+    p.print(" !!! ");
+
+}
+
+}
+
+// OUTPUT :  ROAR :]  !!!
+
+
+
 
 // Use a lamba expression in the ArrayList's forEach() method to print every item in the list:
 
