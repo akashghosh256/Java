@@ -1,13 +1,5 @@
- Merge Intervals
-Medium
+                                                         Merge Intervals
 
-15372
-
-554
-
-Add to List
-
-Share
 Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, 
 and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
