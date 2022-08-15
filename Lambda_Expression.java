@@ -30,7 +30,7 @@ public class fire{
     public static void main(String[] args) {
         Lion lion = new Lion();
         printThing(lion);
-    }
+    } // MAIN CLOSED
     
     static void printThing(Printable p){
         p.print("Roarrrrr");
@@ -55,7 +55,7 @@ public static void main(String[] args) {
 Printable lambdaprint = (s) -> System.out.println(" ROAR :] " +s);
 printThing(lambdaprint);
 
-}
+} // MAIN CLOSED
 
 static void printThing(Printable p){
     p.print(" !!! ");
