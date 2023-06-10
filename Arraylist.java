@@ -1,9 +1,10 @@
 
-// ArrayList is a part of collection framework and is present in java.util package. 
+// ArrayList is a part of collection framework and is present in java.util 
+//package. 
 // It provides us with dynamic arrays in Java.
 import java.util.*; 
   
-class test { 
+class Arraylist { 
     public static void main(String[] args) 
     { 
         // Size of the 
