@@ -1,4 +1,4 @@
-// Note - Code is correct it will not run vs code, it will run in eclipse.
+// Note - Code is correct, but it will not run vs code, it will run in eclipse.
 
 
 class MyThread extends Thread {

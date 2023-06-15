@@ -7,7 +7,7 @@ public static void main(String args[]) throws Exception{
 
 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-StringTokenizer st = new StringTokenizer(f.readLine());  // This line alone takes string input *Remember
+StringTokenizer st = new StringTokenizer(in.readLine());  // This line alone takes string input *Remember
 
 //---------------------------------------------example 1-----------------------------------------------------
 System.out.println("For example 1\n");
@@ -27,8 +27,9 @@ System.out.println(st1.nextToken());
 //--------------------------------------------------example 2---------------------------------------------------------------
 
 /*
- StringTokenizer(String str, String delim):  delim (eg: !, $, & etc) is a set of delimiters that are 
- used to tokenize the given string. This will remove the delimiters from the string. 
+ StringTokenizer(String str, String delim):  delim (eg: !, $, & etc) is a set of 
+ delimiters that are used to tokenize the given string. 
+ This will remove the delimiters from the string. 
  Here "!" is the delimiter.
 
  */

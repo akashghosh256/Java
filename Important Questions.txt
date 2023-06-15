@@ -1,0 +1,6 @@
+https://leetcode.com/problems/merge-intervals/
+
+Sort an array of 0's, 1's and 2's/sort colors /Dutch national flag algorithm
+https://leetcode.com/problems/sort-colors/
+
+
