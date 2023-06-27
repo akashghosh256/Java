@@ -1,37 +1,24 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-
-public class test {
-    public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-
-        // Read the number of rows and columns
-        StringTokenizer st = new StringTokenizer(in.readLine());
-        // int rows = Integer.parseInt(st.nextToken());
-        // int cols = Integer.parseInt(st.nextToken());
-
-        // Initialize the matrix
-        int[][] matrix = new int[rows][cols];
-
-        // Read and store the matrix elements
-        for (int i = 0; i < rows; i++) {
-            st = new StringTokenizer(in.readLine());
-            for (int j = 0; j < cols; j++) {
-                matrix[i][j] = Integer.parseInt(st.nextToken());
-            }
-        }
-            System.out.println("Hello World");
-        // Print the matrix for verification
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-
-        // Close the reader
-        in.close();
+import java.util.*;
+ public class test{
+ public static double myPow(double x, int n) {
+    double ans = 1.0;
+    long nn = n;
+    if (nn < 0) nn = -1 * nn;
+    while (nn > 0) {
+      if (nn % 2 == 1) {
+        ans = ans * x;
+        nn = nn - 1;
+      } else {
+        x = x * x;
+        nn = nn / 2;
+      }
     }
-}
+    if (n < 0) ans = (double)(1.0) / (double)(ans);
+    return ans;
+  }
+
+    public static void main(String args[])
+    {
+        System.out.println(myPow(2.0000,0));
+    }
+ }
