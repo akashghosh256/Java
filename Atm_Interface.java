@@ -1,10 +1,18 @@
+// Task 3 
+// Atm Interface We have all come across ATMs in our cities and it is built on Java.This complex project consists of five different classes and is a console-based application.When the system starts the user is prompted with user id and user pin.On entering the details successfully,then ATM functionalities are unlocked.The project allows to perform following operations:
+// Transactions History
+// Withdraw
+// Deposit
+// Transfer
+// Quit
+
 // I have added the comments for better understanding of the code
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner; // import scanner class for user input
 
-public class test {
+public class Atm_Interface {
     private static final String USER_ID = "12345"; // adding my default user id and pin
     private static final String USER_PIN = "1234";
 
@@ -24,7 +32,7 @@ public class test {
                 showMenu(scanner); // show menu if user enters correct credentials
                 enter = false;
             } else {
-                System.out.println("Invalid credentials. Exiting...");
+                System.out.println("Invalid credentials. Try Again...");
                 enter = true;
             }
         }
@@ -164,3 +172,76 @@ class Transfer {
         }
     }
 }
+
+// Sample Output:
+// Welcome to the ATM
+// Enter User ID: 12345
+// Enter User PIN: 1234
+// Login Successful
+// Default Balance is: 10000.0
+
+// ATM Menu
+// Enter 1 for Transactions History
+// Enter 2 for Withdraw
+// Enter 3 for Deposit
+// Enter 4 for Transfer
+// Enter 5 for Quit
+// Enter your choice: 2
+
+// Current Balance: 10000.0
+// Enter amount to withdraw: 800
+// Withdrawing amount: 800.0
+// Balance: 9200.0
+
+// ATM Menu
+// Enter 1 for Transactions History
+// Enter 2 for Withdraw
+// Enter 3 for Deposit
+// Enter 4 for Transfer
+// Enter 5 for Quit
+// Enter your choice: 3
+
+// Enter amount to deposit: 2000
+// Current Balance: 9200.0
+// Depositing amount: 2000.0
+// New Balance: 11200.0
+
+// ATM Menu
+// Enter 1 for Transactions History
+// Enter 2 for Withdraw
+// Enter 3 for Deposit
+// Enter 4 for Transfer
+// Enter 5 for Quit
+// Enter your choice: 4
+
+// Enter recipient account number: qwe4321
+// Enter transfer amount: 3000
+// Transferring amount: 3000.0 to account: qwe4321
+// New Balance: 8200.0
+
+// ATM Menu
+// Enter 1 for Transactions History
+// Enter 2 for Withdraw
+// Enter 3 for Deposit
+// Enter 4 for Transfer
+// Enter 5 for Quit
+// Enter your choice: 1
+
+// Displaying transaction history...
+// Current Balance: 8200.0
+
+// withdrawl history:
+// -800.0, -3000.0,
+// Deposit history:
+// +2000.0,
+
+// ATM Menu
+// Enter 1 for Transactions History
+// Enter 2 for Withdraw
+// Enter 3 for Deposit
+// Enter 4 for Transfer
+// Enter 5 for Quit
+// Enter your choice: 5
+
+// Logging Out...
+// Thank you for using the ATM. Goodbye!

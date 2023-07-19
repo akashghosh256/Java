@@ -3,9 +3,23 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class A {
+    
+    // Demo function
+//      public static int gcd(int a, int b){
+//   // HCF or GCD of two numbers
+//     while (b != 0) {
+//         int temp = b;
+//         b = a % b;
+//         a= temp;
+//     }
+//      return a;
+//  }
     public static void main(String[] args) throws IOException {
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        long mod = (long) (1e9 + 7);
+
+
        // BufferedReader in = new BufferedReader(new FileReader("input.txt"));
        // PrintWriter out = new PrintWriter(new FileWriter("outputss.txt"));
 
@@ -15,21 +29,25 @@ public class A {
 
         StringBuilder sb = new StringBuilder();
         for (int z = 0; z < t; z++) {
-            // int n = Integer.parseInt(in.readLine());
+            int n = Integer.parseInt(in.readLine());
             // taking array input as string
 
             // 1D input
-            // StringTokenizer st = new StringTokenizer(in.readLine());
-            // //int[] arr = new int[n];
-            // String [] arr = new String[n];
+            StringTokenizer st = new StringTokenizer(in.readLine());
+            int[] a = new int[n];
+            //String [] arr = new String[n];
 
 
-            // // Read the array elements
-            // for (int j = 0; j < n; j++) {
-            //     //arr[j] = Integer.parseInt(st.nextToken());
-            //      arr[j] = st.nextToken();
-            // }
+            // Read the array elements
+            for (int j = 0; j < n; j++) {
+                a[j] = Integer.parseInt(st.nextToken());
+                // arr[j] = st.nextToken();
+            }
                 // 1D end
+            System.out.println("\ntest case :"+(z+1)+"/"+t);
+
+
+
 
         // 2D array input
         // StringTokenizer st = new StringTokenizer(in.readLine());
@@ -58,8 +76,8 @@ public class A {
 
 
         // Process the array as needed
-        sb.append("Hello World\n"); // Example output
-        System.out.print(sb.toString());
+      //  sb.append("Hello World\n"); // Example output
+      //  System.out.print(sb.toString());
         // System.out.println(Arrays.toString(arr));
 
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner; // import scanner class for user input
 
-public class test {
+public class Atm {
     private static final String USER_ID = "12345"; // adding my default user id and pin
     private static final String USER_PIN = "1234";
 
