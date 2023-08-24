@@ -1,105 +1,57 @@
-import java.io.*;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+public class Solution {
+    public static String graphColoring(int[][] mat, int m) {
+        int n = mat.length; // Number of vertices in the graph
 
-public class A {
-    
-    // Demo function
-//      public static int gcd(int a, int b){
-//   // HCF or GCD of two numbers
-//     while (b != 0) {
-//         int temp = b;
-//         b = a % b;
-//         a= temp;
-//     }
-//      return a;
-//  }
-    public static void main(String[] args) throws IOException {
+        // Initialize an array to store the color assignments for each vertex
+        int[] color = new int[n];
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        long mod = (long) (1e9 + 7);
-
-
-       // BufferedReader in = new BufferedReader(new FileReader("input.txt"));
-       // PrintWriter out = new PrintWriter(new FileWriter("outputss.txt"));
-
-
-
-        int t = Integer.parseInt(in.readLine());
-
-        StringBuilder sb = new StringBuilder();
-        for (int z = 0; z < t; z++) {
-            int n = Integer.parseInt(in.readLine());
-            // taking array input as string
-
-            // 1D input
-            StringTokenizer st = new StringTokenizer(in.readLine());
-            StringTokenizer sp = new StringTokenizer(in.readLine());
-            int[] a= new int[n];
-            int[] b = new int[n];
-            //String [] arr = new String[n];
-
-
-            // Read the array elements
-            for (int j = 0; j < n; j++) {
-                a[j] = Integer.parseInt(st.nextToken());
-                b[j] = Integer.parseInt(sp.nextToken());
-                // arr[j] = st.nextToken();
-            }
-                // 1D end
-            //System.out.println("\ntest case :"+(z+1)+"/"+t);
-Arrays.sort(a);
-Arrays.sort(b);
-long ans =1;
-
-int j = n - 1;
-for (int i = n - 1; i >= 0; i--) {
-    while (j >= 0 && a[j] > b[i]) {
-        j--;
-    }
-    if (i < j) {
-        ans =0;
-    }
-    ans *= (i - j);
-    ans %= mod;
-}
-System.out.println(ans);
-
-            
-        // 2D array input
-        // StringTokenizer st = new StringTokenizer(in.readLine());
-        // int rows = Integer.parseInt(st.nextToken());
-        // int cols = Integer.parseInt(st.nextToken());
-
-        // // Initialize the matrix
-        // int[][] matrix = new int[rows][cols];
-
-        // // Read and store the matrix elements
-        // for (int i = 0; i < rows; i++) {
-        //    st = new StringTokenizer(in.readLine());
-        //     for (int j = 0; j < cols; j++) {
-        //         matrix[i][j] = Integer.parseInt(st.nextToken());
-        //     }
-        // }
-        //     out.println("Matrix is: ");
-        // // Print the 2D matrix for verification
-        // for (int i = 0; i < rows; i++) {
-        //     for (int j = 0; j < cols; j++) {
-        //         out.print(matrix[i][j] + " ");
-        //     }
-        //     out.println();
-        // }
-        // 2D end
-
-
-        // Process the array as needed
-      //  sb.append("Hello World\n"); // Example output
-      //  System.out.print(sb.toString());
-        // System.out.println(Arrays.toString(arr));
-
-
+        // Start coloring the graph from vertex 0
+        if (graphColoringUtil(mat, color, m, 0)) {
+            return "YES"; // No valid coloring is possible
         }
-        // Close the reader
-        in.close();
+        return "NO";
+
+       
     }
+
+    // Recursive function to assign colors to vertices using backtracking
+    private static boolean graphColoringUtil(int[][] mat, int[] color, int numColors, int vertex) {
+        int n = mat.length; // Number of vertices in the graph
+
+        // Base case: All vertices are colored
+        if (vertex == n) {
+            return true;
+        }
+
+        // Try all colors for the current vertex
+        for (int c = 1; c <= numColors; c++) {
+            if (isSafe(mat, color, vertex, c)) {
+                color[vertex] = c; // Assign color 'c' to the vertex
+
+                // Recur for the next vertex
+                if (graphColoringUtil(mat, color, numColors, vertex + 1)) {
+                    return true;
+                }
+
+                color[vertex] = 0; // Backtrack: Reset color to unassigned
+            }
+        }
+
+        return false; // No valid coloring found
+    }
+
+    // Function to check if a color can be assigned to a vertex
+    private static boolean isSafe(int[][] mat, int[] color, int vertex, int c) {
+        int n = mat.length; // Number of vertices in the graph
+
+        // Check if the color 'c' is used by adjacent vertices
+        for (int i = 0; i < n; i++) {
+            if (mat[vertex][i] == 1 && color[i] == c) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+   
 }

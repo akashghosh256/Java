@@ -1,0 +1,49 @@
+  // Convert the array to a stream and find the maximum value
+        int max = Arrays.stream(array).max().getAsInt();
+
+// Calculate the sum using streams for sum of all elements in array
+        int sum = Arrays.stream(array).sum();
+
+
+
+// Find the maximum value using Collections.max()
+        int max = Collections.max(arrayList);
+
+  // Calculate the sum using streams
+        int sum = arrayList.stream().mapToInt(Integer::intValue).sum();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
