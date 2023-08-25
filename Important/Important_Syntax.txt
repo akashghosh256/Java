@@ -11,6 +11,55 @@
 
   // Calculate the sum using streams
         int sum = arrayList.stream().mapToInt(Integer::intValue).sum();
+		
+https://www.codingninjas.com/studio/library/applications-of-heap-data-structure
+
+
+ Deque<String> deque = new ArrayDeque<>();
+ deque.addFirst("First");
+ deque.addLast("Last");
+
+
+ Map<String, Integer> hashMap = new HashMap<>();
+
+        // Adding key-value pairs
+        hashMap.put("Alice", 25);
+        hashMap.put("Bob", 30);
+        hashMap.put("Charlie", 22);
+		
+
+ // Declare and initialize a HashSet
+        Set<String> hashSet = new HashSet<>();
+
+        // Adding elements to the set
+        hashSet.add("Apple");
+        hashSet.add("Banana");
+        hashSet.add("Orange");
+        hashSet.add("Apple"); // Duplicate, won't be added
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
