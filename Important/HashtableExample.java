@@ -17,15 +17,8 @@ package Important;
 // Hashtable: Older, considered somewhat legacy.
 // HashMap: More modern and preferred in most scenarios.
 // Which is Better:
-
-// HashMap: Preferred due to its better performance and flexibility. Use ConcurrentHashMap for thread-safety in multi-threaded scenarios.
-
-
-
-
-
-
-
+// HashMap: Preferred due to its better performance and flexibility. Use ConcurrentHashMap for 
+// thread-safety in multi-threaded scenarios.
 
 
 import java.util.Hashtable;
