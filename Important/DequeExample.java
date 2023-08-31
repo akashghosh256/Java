@@ -1,5 +1,3 @@
-package Important;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -9,10 +7,10 @@ public class DequeExample {
         Deque<Integer> deque = new ArrayDeque<>();
 
         // Add elements to the front and back of the deque
-        deque.addFirst(10);
-        deque.addLast(20);
+        deque.addFirst(100);
         deque.addFirst(5);
-        deque.addLast(30);
+        deque.addLast(600);
+        deque.addLast(200);
 
         // Display the deque
         System.out.println("Deque: " + deque);

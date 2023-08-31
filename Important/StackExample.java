@@ -1,4 +1,4 @@
-package Important;
+
 
 import java.util.Stack;
 
@@ -11,6 +11,9 @@ public class StackExample {
         stack.push(10);
         stack.push(20);
         stack.push(30);
+
+        // Stack Size
+        System.out.println("Stack Size:"+stack.size());
 
         // Display the stack
         System.out.println("Stack: " + stack);
@@ -36,3 +39,64 @@ public class StackExample {
     }
 }
 
+// Implementing a Stack using an Array--------------------------------------------------------------
+
+public class StackUsingArray {
+    private int maxSize;
+    private int top;
+    private int[] stackArray;
+
+    public StackUsingArray(int size) {
+        maxSize = size;
+        top = -1;
+        stackArray = new int[maxSize];
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    public boolean isFull() {
+        return top == maxSize - 1;
+    }
+
+    public void push(int value) {
+        if (isFull()) {
+            System.out.println("Stack is full. Cannot push " + value);
+            return;
+        }
+        stackArray[++top] = value;
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty. Cannot pop.");
+            return -1; // You can choose a different value to indicate error.
+        }
+        return stackArray[top--];
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty. Nothing to peek.");
+            return -1; // You can choose a different value to indicate error.
+        }
+        return stackArray[top];
+    }
+
+    public int size() {
+        return top + 1;
+    }
+
+    public static void main(String[] args) {
+        StackUsingArray stack = new StackUsingArray(5);
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        System.out.println("Pop: " + stack.pop());
+        System.out.println("Peek: " + stack.peek());
+        System.out.println("Size: " + stack.size());
+    }
+}

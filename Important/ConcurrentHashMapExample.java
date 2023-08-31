@@ -1,4 +1,4 @@
-package Important;
+
 
 // In this example, we import the ConcurrentHashMap class and use 
 // it to create a concurrent hashmap of strings (keys) and integers 

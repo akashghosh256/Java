@@ -1,5 +1,8 @@
-package Important;
+//priority queue stores data in sorted order (ascending order by default) 
+//and allows fast retrieval of the smallest element.
 
+
+import java.util.*;
 import java.util.PriorityQueue;
 
 public class PriorityQueueExample {
@@ -10,7 +13,7 @@ public class PriorityQueueExample {
         // Add elements to the priority queue
         priorityQueue.add(30);
         priorityQueue.add(10);
-        priorityQueue.add(20);
+        priorityQueue.add(200);
 
         // Display the priority queue
         System.out.println("PriorityQueue: " + priorityQueue);

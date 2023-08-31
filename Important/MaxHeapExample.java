@@ -1,4 +1,4 @@
-package Important;
+
 
 // In this example, we create a Max Heap using the 
 // PriorityQueue class with a custom comparator (Comparator.reverseOrder()) to reverse the natural 
@@ -12,11 +12,18 @@ public class MaxHeapExample {
     public static void main(String[] args) {
         // Create a max-heap (PriorityQueue with custom comparator)
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
+        //PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b)-> b - a);  // same can be done without using co 
+
 
         // Add elements to the heap
         maxHeap.add(10);
         maxHeap.add(30);
         maxHeap.add(20);
+        maxHeap.add(5);
+        maxHeap.add(500);
+        maxHeap.offer(245);  // offer() is the same as add()
+
+
 
         // Display the heap
         System.out.println("Max-Heap (PriorityQueue): " + maxHeap);

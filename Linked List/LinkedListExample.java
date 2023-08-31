@@ -52,7 +52,7 @@ class LinkedList<T> {
     }
 }
 
-public class Main {
+public class LinkedListExample {
     public static void main(String[] args) {
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.add(5);
