@@ -25,6 +25,10 @@ class Arraylist {
   
         // Remove element at index 3 
         arrli.remove(3); 
+
+        
+        // Reverse the ArrayList
+        Collections.reverse(arrli);
   
         // Displaying the ArrayList 
         // after deletion 
