@@ -3,6 +3,13 @@
 import java.util.HashMap;
 import java.util.Map;
 
+// To ensure that the elements are ordered correctly, you should use 
+// a TreeMap instead of a HashMap. A TreeMap automatically sorts its 
+// keys, which in this case represents the horizontal distance from the 
+// root. HashMap doesn't guarantee that the elements will be in the correct
+// order from left to right.
+
+
 public class HashMapExample {
     public static void main(String[] args) {
         // Create a HashMap
@@ -52,6 +59,9 @@ public class HashMapExample {
 
         // Iterate through the HashMap
         System.out.println("Iterating through the HashMap:");
+
+
+        // way to print map
         for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }

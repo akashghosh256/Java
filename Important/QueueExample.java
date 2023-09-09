@@ -2,6 +2,7 @@
 // and allows fast retrieval of the first element.
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Queue;
 
 public class QueueExample {
@@ -30,6 +31,13 @@ public class QueueExample {
 
         // Remove elements from the queue
         System.out.println("Removed: " + queue.poll()); // Removes and returns the front element
+
+       // Create a queue (Deque)
+        // Deque<Integer> deque = new ArrayDeque<>();
+        // // Remove the last element from the queue
+        // Integer removedElement = deque.pollLast();
+        //  // Peek at the last (tail) element
+        // Integer lastElement = deque.peekLast();
         
 
         // Remove top element

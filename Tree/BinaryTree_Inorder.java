@@ -16,7 +16,7 @@ class tNode {
 	}
 }
 
-class BinaryTree {
+class BinaryTree_Inorder {
 	tNode root;
 
 	/* Function to traverse a
@@ -82,7 +82,7 @@ class BinaryTree {
 		/ \
 		4	 5
 		*/
-		BinaryTree tree = new BinaryTree();
+		BinaryTree_Inorder tree = new BinaryTree_Inorder();
 		tree.root = new tNode(1);
 		tree.root.left = new tNode(2);
 		tree.root.right = new tNode(3);
