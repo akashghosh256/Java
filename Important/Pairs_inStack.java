@@ -69,6 +69,16 @@ public class Pairs_inStack {
         System.out.println(st.pop().key);
         System.out.println(st.pop().value);
 
+        Queue<Tuple> q = new ArrayDeque<>();
+        q.add(new Tuple("Ag",20,2));
+        q.add(new Tuple("TOPG",24,2));
+        System.out.println(q.poll().row);
+         System.out.println(q.poll().name);
+
+
+
+
+
 
 
 

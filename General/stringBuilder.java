@@ -51,6 +51,8 @@ public class stringBuilder {
 		StringBuilder str1
 			= new StringBuilder("AAAABBBCCCC");
 
+		str1.setLength(4);  // removes all characters after length 4
+
 		// print string
 		System.out.println("String1 = " + str1.toString());
 
