@@ -24,6 +24,15 @@ public class MinHeapExample {
         minHeap.add(30);
         minHeap.add(5);
 
+
+        int k =3;
+        int nums[] = {4,5,6,7,1,3,4};
+         PriorityQueue<Integer> minh = new PriorityQueue<>(k);
+        for (int a :nums) {
+            minh.offer(a);
+        }
+          System.out.println("Minimum element: " + minh.peek());
+
         // Display the Min Heap
         System.out.println("Min Heap (PriorityQueue): " + minHeap);
 

@@ -7,13 +7,14 @@ https://leetcode.com/problems/sort-colors/
 https://leetcode.com/problems/subsets/
 https://practice.geeksforgeeks.org/problems/power-set4302/1
 https://leetcode.com/problems/subarray-sum-equals-k/
+https://leetcode.com/problems/course-schedule/
 
 https://leetcode.com/problems/subsets/description/The postfix shortcuts we currently support are the following:
 
 https://leetcode.com/problems/min-stack/
 https://leetcode.com/problems/online-stock-span/description/
 https://www.youtube.com/watch?v=lGWLBgwd-cw
-
+https://leetcode.com/problems/is-subsequence/
 
 LinkedIn-------------------------------------------------------------------------------------------------------------
 https://leetcode.com/discuss/interview-question/1263982/thomson-reuters-oa-circular-printer
@@ -40,5 +41,52 @@ https://leetcode.com/problems/design-authentication-manager/description/
 https://www.geeksforgeeks.org/find-element-array-sum-left-array-equal-sum-right-array/
 
 ----------------------------------------------------------------------------------------------------------------
+
+https://leetcode.com/discuss/interview-experience/4051713/Oracle-oror-On-Campus-Placement-for-App-Development
+https://leetcode.com/discuss/interview-experience/4049139/PlaySimple-Games-or-Associate-Software-Engineer-(6-months-intern-%2B-fte)-or-Bangalore-or-Selected
+https://leetcode.com/discuss/interview-experience/4044732/Soroco-or-SDE-1-or-On-Hold-or-Sed-Lyf-or-
+https://leetcode.com/discuss/interview-experience/4064818/BNY-Mellon-or-SDE-1-(Fresher)-or-PuneChennai-or-August-2023-(Selected)
+
+
+https://leetcode.com/discuss/interview-question/operating-system/3583103/Topic-Wise-commonly-asked-operating-system-interview-questionsoror-Topic-Wise-Arranged
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
