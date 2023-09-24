@@ -41,9 +41,9 @@ class Pair{
    int key;
    int value;
 
-    public Pair(int _key, int _value) {
-        key = _key;
-        value = _value;
+    public Pair(int key, int value) {
+        this.key = key;
+        this.value = value;
     }
 }
 
@@ -52,10 +52,10 @@ class Tuple {
     String name;
     int row;
     int col;
-    public Tuple(String _name, int _row, int _col) {
-        name = _name;
-        row = _row;
-        col = _col;
+    public Tuple(String name, int row, int col) {
+        this.name = name;
+        this.row = row;
+        this.col = col;
     }
 }
 
