@@ -1,20 +1,6 @@
-https://leetcode.com/problems/merge-intervals/
-https://leetcode.com/discuss/interview-question/3974965/BNY-Mellon-oror-Software-Developer-oror-PuneChennai-oror-Aug-2023-oror-SELECTED-ON-CAMPUS
-
-Sort an array of 0's, 1's and 2's/sort colors /Dutch national flag algorithm
-https://leetcode.com/problems/sort-colors/
-
-https://leetcode.com/problems/subsets/
-https://practice.geeksforgeeks.org/problems/power-set4302/1
-https://leetcode.com/problems/subarray-sum-equals-k/
-https://leetcode.com/problems/course-schedule/
-
-https://leetcode.com/problems/subsets/description/The postfix shortcuts we currently support are the following:
-
-https://leetcode.com/problems/min-stack/
-https://leetcode.com/problems/online-stock-span/description/
-https://www.youtube.com/watch?v=lGWLBgwd-cw
-https://leetcode.com/problems/is-subsequence/
+https://leetcode.com/discuss/interview-experience/4089971/American-Express-or-Off-Campus-or-SDE-or-Intern-%2B-Full-Time
+https://leetcode.com/discuss/interview-question/4089859/BNY-Mellon-or-OA-or-FTE-2024
+https://leetcode.com/problems/merge-intervals/https://leetcode.com/discuss/interview-question/3974965/BNY-Mellon-oror-Software-Developer-oror-PuneChennai-oror-Aug-2023-oror-SELECTED-ON-CAMPUS
 
 LinkedIn-------------------------------------------------------------------------------------------------------------
 https://leetcode.com/discuss/interview-question/1263982/thomson-reuters-oa-circular-printer

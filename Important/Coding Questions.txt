@@ -1,0 +1,33 @@
+Check if characters of a given string can be rearranged to form a palindrome.
+Smallest string divisible by two given strings.
+Program to count Number of connected components in an undirected graph.
+https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+https://leetcode.com/problems/integer-to-english-words/
+https://leetcode.com/problems/design-add-and-search-words-data-structure/
+https://leetcode.com/problems/longest-palindromic-subsequence/description/
+
+
+
+
+Basic----------------------------------------
+https://practice.geeksforgeeks.org/problems/equalize-an-array3405/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab
+https://leetcode.com/problems/minimum-increment-to-make-array-unique/
+
+https://practice.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1
+https://www.youtube.com/watch?v=jjqmcZPslrQ&ab_channel=Bit-N-Byte
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 import java.io.*;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.util.*;
+
 
 public class A {
     
@@ -14,10 +14,56 @@ public class A {
 //     }
 //      return a;
 //  }
+    static class Pair {
+        int first, second;
+
+        Pair(int first, int second) {
+            this.first = first;
+            this.second = second;
+        }
+    }
+
+
+     static int gcd(int a, int b)   //HCF
+    {
+        // stores minimum(a, b)
+        int i;
+        if (a < b)
+            i = a;
+        else
+            i = b;
+ 
+        // take a loop iterating through smaller number to 1
+        for (; i > 1; i--) {
+ 
+            // check if the current value of i divides both
+            // numbers with remainder 0 if yes, then i is
+            // the GCD of a and b
+            if (a % i == 0 && b % i == 0)
+                return i;
+        }
+
+         // if there are no common factors for a and b other
+        // than 1, then GCD of a and b is 1
+        return 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+     static final long mod = 1000000007;
+
     public static void main(String[] args) throws IOException {
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        long mod = (long) (1e9 + 7);
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
 
        // BufferedReader in = new BufferedReader(new FileReader("input.txt"));
@@ -25,26 +71,30 @@ public class A {
 
 
 
-        int t = Integer.parseInt(in.readLine());
+        int TEST = Integer.parseInt(in.readLine());
+        int test_no = 1;
 
         StringBuilder sb = new StringBuilder();
-        for (int z = 0; z < t; z++) {
+        while(TEST-- > 0){
             int n = Integer.parseInt(in.readLine());
+            String str = in.readLine();
             // taking array input as string
 
-            // 1D input
-            StringTokenizer st = new StringTokenizer(in.readLine());
-            int[] a = new int[n];
-            //String [] arr = new String[n];
+            // // 1D input
+            // StringTokenizer st = new StringTokenizer(in.readLine());
+            // int[] a = new int[n];
+            // //String [] arr = new String[n];
 
 
-            // Read the array elements
-            for (int j = 0; j < n; j++) {
-                a[j] = Integer.parseInt(st.nextToken());
-                // arr[j] = st.nextToken();
-            }
+            // // Read the array elements
+            // for (int j = 0; j < n; j++) {
+            //     a[j] = Integer.parseInt(st.nextToken());
+            //     // arr[j] = st.nextToken();
+            // }
                 // 1D end
-            System.out.println("\ntest case :"+(z+1)+"/"+t);
+
+      
+            System.out.println("\ntest case :"+test_no++);
 
 
 

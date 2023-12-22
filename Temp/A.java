@@ -1,57 +1,139 @@
-public class Solution {
-    public static String graphColoring(int[][] mat, int m) {
-        int n = mat.length; // Number of vertices in the graph
+import java.io.*;
+import java.util.*;
 
-        // Initialize an array to store the color assignments for each vertex
-        int[] color = new int[n];
 
-        // Start coloring the graph from vertex 0
-        if (graphColoringUtil(mat, color, m, 0)) {
-            return "YES"; // No valid coloring is possible
+public class A {
+    
+    // Demo function
+//      public static int gcd(int a, int b){
+//   // HCF or GCD of two numbers
+//     while (b != 0) {
+//         int temp = b;
+//         b = a % b;
+//         a= temp;
+//     }
+//      return a;
+//  }
+    static class Pair {
+        int first, second;
+
+        Pair(int first, int second) {
+            this.first = first;
+            this.second = second;
         }
-        return "NO";
-
-       
     }
 
-    // Recursive function to assign colors to vertices using backtracking
-    private static boolean graphColoringUtil(int[][] mat, int[] color, int numColors, int vertex) {
-        int n = mat.length; // Number of vertices in the graph
 
-        // Base case: All vertices are colored
-        if (vertex == n) {
-            return true;
+     static int gcd(int a, int b)   //HCF
+    {
+        // stores minimum(a, b)
+        int i;
+        if (a < b)
+            i = a;
+        else
+            i = b;
+ 
+        // take a loop iterating through smaller number to 1
+        for (; i > 1; i--) {
+ 
+            // check if the current value of i divides both
+            // numbers with remainder 0 if yes, then i is
+            // the GCD of a and b
+            if (a % i == 0 && b % i == 0)
+                return i;
         }
 
-        // Try all colors for the current vertex
-        for (int c = 1; c <= numColors; c++) {
-            if (isSafe(mat, color, vertex, c)) {
-                color[vertex] = c; // Assign color 'c' to the vertex
-
-                // Recur for the next vertex
-                if (graphColoringUtil(mat, color, numColors, vertex + 1)) {
-                    return true;
-                }
-
-                color[vertex] = 0; // Backtrack: Reset color to unassigned
-            }
-        }
-
-        return false; // No valid coloring found
+         // if there are no common factors for a and b other
+        // than 1, then GCD of a and b is 1
+        return 1;
     }
 
-    // Function to check if a color can be assigned to a vertex
-    private static boolean isSafe(int[][] mat, int[] color, int vertex, int c) {
-        int n = mat.length; // Number of vertices in the graph
 
-        // Check if the color 'c' is used by adjacent vertices
-        for (int i = 0; i < n; i++) {
-            if (mat[vertex][i] == 1 && color[i] == c) {
-                return false;
-            }
+
+
+
+
+
+
+
+
+
+
+     static final long mod = 1000000007;
+
+    public static void main(String[] args) throws IOException {
+
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+
+       // BufferedReader in = new BufferedReader(new FileReader("input.txt"));
+       // PrintWriter out = new PrintWriter(new FileWriter("outputss.txt"));
+
+
+
+        int TEST = Integer.parseInt(in.readLine());
+        int test_no = 1;
+
+        StringBuilder sb = new StringBuilder();
+        while(TEST-- > 0){
+            int n = Integer.parseInt(in.readLine());
+            String str = in.readLine();
+            // taking array input as string
+
+            // // 1D input
+            // StringTokenizer st = new StringTokenizer(in.readLine());
+            // int[] a = new int[n];
+            // //String [] arr = new String[n];
+
+
+            // // Read the array elements
+            // for (int j = 0; j < n; j++) {
+            //     a[j] = Integer.parseInt(st.nextToken());
+            //     // arr[j] = st.nextToken();
+            // }
+                // 1D end
+
+      
+            System.out.println("\ntest case :"+test_no++);
+            System.out.println(gcd(5,10));
+
+
+
+
+        // 2D array input
+        // StringTokenizer st = new StringTokenizer(in.readLine());
+        // int rows = Integer.parseInt(st.nextToken());
+        // int cols = Integer.parseInt(st.nextToken());
+
+        // // Initialize the matrix
+        // int[][] matrix = new int[rows][cols];
+
+        // // Read and store the matrix elements
+        // for (int i = 0; i < rows; i++) {
+        //    st = new StringTokenizer(in.readLine());
+        //     for (int j = 0; j < cols; j++) {
+        //         matrix[i][j] = Integer.parseInt(st.nextToken());
+        //     }
+        // }
+        //     out.println("Matrix is: ");
+        // // Print the 2D matrix for verification
+        // for (int i = 0; i < rows; i++) {
+        //     for (int j = 0; j < cols; j++) {
+        //         out.print(matrix[i][j] + " ");
+        //     }
+        //     out.println();
+        // }
+        // 2D end
+
+
+        // Process the array as needed
+      //  sb.append("Hello World\n"); // Example output
+      //  System.out.print(sb.toString());
+        // System.out.println(Arrays.toString(arr));
+
+
         }
-        return true;
+        // Close the reader
+        in.close();
     }
-
-   
 }
