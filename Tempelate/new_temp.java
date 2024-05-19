@@ -2,7 +2,9 @@ import java.io.*;
 import java.util.*;
 
 
-public class A {
+// DONT CHANGE --------------------------------------------------
+
+ class main {
     
     // Demo function
 //      public static int gcd(int a, int b){
@@ -14,14 +16,22 @@ public class A {
 //     }
 //      return a;
 //  }
-    static class Pair {
-        int first, second;
+class Pair{
+   int key;
+   int value;
 
-        Pair(int first, int second) {
-            this.first = first;
-            this.second = second;
-        }
+    public Pair(int key, int value) {
+        this.key = key;
+        this.value = value;
     }
+      public  int getKey() {
+            return key;
+        }
+
+        public int getValue() {
+            return value;
+        }
+}
 
 
      static int gcd(int a, int b)   //HCF
@@ -95,7 +105,6 @@ public class A {
 
       
             System.out.println("\ntest case :"+test_no++);
-            System.out.println(gcd(5,10));
 
 
 

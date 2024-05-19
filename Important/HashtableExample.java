@@ -39,17 +39,26 @@ public class HashtableExample {
         // Check if the Hashtable is empty
         System.out.println("Is Hashtable empty? " + hashtable.isEmpty());
 
+
+
+
+//changing value
+int value =  hashtable.getOrDefault("apple",0);
+hashtable.put("apple",value+10);
+
+
+
         // Get value for a specific key
         String key = "banana";
         if (hashtable.containsKey(key)) {
-            int value = hashtable.get(key);
+            value = hashtable.get(key);
             System.out.println("Value for key '" + key + "': " + value);
         } else {
             System.out.println("Key '" + key + "' not found.");
         }
 
         // Update value for a specific key
-        key = "apple";
+        key = "coconut";
         if (hashtable.containsKey(key)) {
             int newValue = 10;
             hashtable.put(key, newValue);

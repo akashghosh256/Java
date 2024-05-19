@@ -17,12 +17,30 @@ https://practice.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix15
 https://www.youtube.com/watch?v=jjqmcZPslrQ&ab_channel=Bit-N-Byte
 
 
+Arsh Goyal------------------------------------------
+
+https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/
+https://www.youtube.com/watch?v=B3ijZEEaJsE&ab_channel=PrakharAgrawal
+
+
+https://leetcode.com/problems/high-access-employees/
+https://www.youtube.com/watch?v=iF8DjSXC1Bs&ab_channel=PrakharAgrawal
+
+https://leetcode.com/problems/query-kth-smallest-trimmed-number/submissions/1135274317/
+https://www.youtube.com/watch?v=jfVPqDNqxMs&ab_channel=PrakharAgrawal
 
 
 
+https://leetcode.com/problems/combination-sum-iii/description/
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
 
 
 
+very imp
+https://leetcode.com/problems/map-of-highest-peak/solutions/1074551/python-java-bfs-from-cell-with-lowest-height-clean-concise/
+
+https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1
+https://takeuforward.org/data-structure/find-the-repeating-and-missing-numbers/
 
 
 

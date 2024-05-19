@@ -3,17 +3,20 @@
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class QueueExample {
     public static void main(String[] args) {
         // Create a queue
         Queue<Integer> queue = new ArrayDeque<>();
+  //  or      Queue<Integer> queue = new LinkedList<>();
 
         // Add elements to the queue
         queue.add(30);
         queue.add(10);
         queue.add(200);
+        queue.offer(24);
         
 
         // Display the queue
@@ -30,7 +33,8 @@ public class QueueExample {
         System.out.println("Front element: " + queue.peek());
 
         // Remove elements from the queue
-        System.out.println("Removed: " + queue.poll()); // Removes and returns the front element
+        // Removes and returns the front element
+        System.out.println("Removed: " + queue.poll()); 
 
        // Create a queue (Deque)
         // Deque<Integer> deque = new ArrayDeque<>();
