@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Arrays_Sort {
- use -> https://leetcode.com/problems/merge-intervals/
+ // use -> https://leetcode.com/problems/merge-intervals/
 
  List<int[]> mergedIntervals = new ArrayList<>();
  
@@ -14,6 +14,7 @@ public class Arrays_Sort {
         };
 
 Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
+
 Sorting process:
 
 The sorting algorithm compares the first elements of each subarray and 

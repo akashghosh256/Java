@@ -31,6 +31,25 @@ If it happens that it's possible for it to be accessed by multiple threads,
 
 // Java Code to illustrate StringBuilder
 
+
+class stringBuilder{
+	static   void helper(String st, StringBuilder s){
+   
+		 s.append(st).reverse();
+		 System.out.println(s);
+	  }
+	public static void main(String[] args) {
+	   StringBuilder s = new StringBuilder();
+	   s.append('a');
+	   s.append('z');
+	   s.append("ass");   // directly add string no issue
+	   s.reverse();
+	   System.out.println(s.toString());
+	  helper("ass", new StringBuilder());
+   
+	}    
+   }
+
 import java.util.*;
 import java.util.concurrent.LinkedBlockingQueue;
 

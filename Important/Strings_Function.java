@@ -1,5 +1,9 @@
 import java.util.*;
 public class Strings_Function { 
+
+    private String min(String a, String b){
+        return a.compareTo(b) < 0 ? a:b;
+    }
 public static void main(String[] args){
 
 String s = "   He ll o AAAAA   A      ";
