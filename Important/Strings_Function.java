@@ -1,10 +1,23 @@
 import java.util.*;
 public class Strings_Function { 
+static String ans="";
 
-    private String min(String a, String b){
+    // small string comaprer
+
+    private static String min(String a, String b){
         return a.compareTo(b) < 0 ? a:b;
     }
+
+
+
+
+
+
+
+
 public static void main(String[] args){
+    ans = min("ass", "sex");
+    System.out.println(ans);
 
 String s = "   He ll o AAAAA   A      ";
 
