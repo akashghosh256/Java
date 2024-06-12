@@ -1,17 +1,15 @@
 class Main{
- static   void helper(String st, StringBuilder s){
+void help(){
+    System.out.println("yo");
+  }
 
-      s.append(st).reverse();
-      System.out.println(s);
-   }
- public static void main(String[] args) {
-   //  StringBuilder s = new StringBuilder();
-   //  s.append('a');
-   //  s.append('z');
-   //  s.append("ass");
-   //  s.reverse();
-   //  System.out.println(s.toString());
-   helper("ass", new StringBuilder());
 
- }    
+public static void main(String[] args) {
+//   Main m = new Main();
+//  m.help();
+// Main.help();
+String st ="as dd s x";
+char c[] = st.toCharArray();
+System.out.println(st.length()+""+c.length);
+} 
 }
