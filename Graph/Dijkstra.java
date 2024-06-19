@@ -1,5 +1,17 @@
 
 https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
+
+class Pair{
+    int first;
+    int second;
+    public Pair(int first, int second){
+        this.first = first;
+        this.second = second;
+    }
+}
+
+
+
 class Solution
 {
     //Function to find the shortest distance of all the vertices
